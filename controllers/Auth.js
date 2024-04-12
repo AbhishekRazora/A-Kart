@@ -31,7 +31,8 @@ export const createUser = async (req, res, next) => {
 
         res.clearCookie(COOKIE_Name, {
             path: "/",
-            domain: "localhost",
+            // domain: "localhost",
+            domain: "a-kart.onrender.com",
             httpOnly: true,
             signed: true,
         })
@@ -42,7 +43,8 @@ export const createUser = async (req, res, next) => {
 
         res.cookie(COOKIE_Name, token, {
             path: "/",
-            domain: "localhost",
+            // domain: "localhost",
+            domain: "a-kart.onrender.com",
             expires,
             httpOnly: true,
             signed: true,
@@ -75,7 +77,8 @@ export const loginUser = async (req, res, next) => {
 
         res.clearCookie(COOKIE_Name, {
             path: "/",
-            domain: "localhost",
+            // domain: "localhost",
+            domain: "a-kart.onrender.com",
             httpOnly: true,
             signed: "true",
         })
@@ -86,7 +89,8 @@ export const loginUser = async (req, res, next) => {
 
         res.cookie(COOKIE_Name, token, {
             path: "/",
-            domain: "localhost",
+            // domain: "localhost",
+            domain: "a-kart.onrender.com",
             expires,
             httpOnly: true,
             signed: true,
@@ -128,7 +132,8 @@ export const signOutUser = async (req, res, next) => {
         }
         res.clearCookie(COOKIE_Name, {
             path: "/",
-            domain: "localhost",
+            // domain: "localhost",
+            domain: "a-kart.onrender.com",
             httpOnly: true,
             signed: true,
         })
